@@ -58,9 +58,10 @@ header {
   width: 100%;
 }
 
-.wrap-logo .logo {
+.logo {
   max-width: 100%;
   height: auto;
+  margin-top: 1.25rem;
 }
 
 .tagline {
@@ -70,6 +71,7 @@ header {
   font-family: "Trebuchet MS", sans-serif;
   line-height: 25px;
   text-shadow: 0 1px 1px rgba(0, 1, 1, 0.46);
+  padding-top: 30px;
 }
 
 .tagline a {
@@ -91,6 +93,18 @@ header {
   text-align: right;
 }
 
+.nav{
+  margin-left: -5px!important;
+}
+.nav-link {
+  color: white !important;
+  padding: 5px !important;
+}
+
+.separator{
+  color: black;
+  margin-left: 10px;
+}
 .button-booking {
   background: linear-gradient(to bottom, #cd2b52, #e62e5c);
   color: #1e2d5c;
@@ -113,41 +127,31 @@ header {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-.horizontal-nav {
-  width: 100%;
-  background-color: #ffffff;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid #ddd;
-}
-
-.horizontal-nav ul {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-}
-
-.horizontal-nav li a {
-  color: #CD2B52;
-  font-weight: bold;
-  font-size: 14px;
+.nav-item {
+  font-family: "Trebuchet MS", Sans-serif;
   text-transform: uppercase;
-  transition: color 0.3s ease;
 }
 
-.horizontal-nav li a:hover {
-  color: #E62E5C;
-  text-decoration: underline;
+a {
+  text-decoration: none;
+  color: white;
 }
 
 
 @media (max-width: 768px) {
   header {
-    height: auto;
     flex-direction: column;
     align-items: center;
     padding: 0.5rem;
+    height: auto;
+  }
+
+  .tag-text {
+    position: absolute;
+    position: absolute;
+    width: 94px;
+    margin-top: -10px;
+    margin-left: -18px;
   }
 
   .wrapper-header {
@@ -157,7 +161,7 @@ header {
     width: 100%;
     max-width: 100%;
     gap: 0.5rem;
-    padding-right: 30px;
+    padding-right: 40px;
   }
 
   .logo {
@@ -174,6 +178,7 @@ header {
     margin-left: 0;
     white-space: normal;
     text-align: center;
+    padding-top: 0;
   }
 
   .phone {
