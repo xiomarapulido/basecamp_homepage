@@ -58,7 +58,7 @@ header {
   width: 100%;
   height: 145px;
   background: url("../images-new/body.jpg") repeat-x top;
-  
+
 }
 
 .wrapper-header {
@@ -110,10 +110,10 @@ header {
   text-align: left;
   margin-top: 15px;
   margin-left: -15px;
-  
+
 }
 
-.navbar-option  {
+.navbar-option {
   font-family: "Trebuchet MS", Sans-serif;
   text-transform: uppercase;
   color: #fff;
@@ -155,6 +155,28 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.board-wrapper {
+  padding: 10px;
+}
+
+.wrapper-bg {
+  background-image: url('../images-new/panel.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-options-info {
+  position: absolute;
+  top: 0;
+}
+
 
 
 @media (max-width: 768px) {
